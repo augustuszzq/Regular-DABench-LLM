@@ -1,0 +1,37 @@
+app: /home/ziyu/sambanova/tutorials/generative_nlp/generative_train.py
+compile-args: |
+  --max_seq_length 1024
+  --batch-size 16
+  --config_name configuration/gpt2_small_config.json
+  
+  --weight_decay 0.1
+  --max_grad_norm_clip 1.0
+  --pef-name train
+  
+  --log-level error
+  --graphamp-preset mp4
+  --num-tiles 4
+  --resources-scaling-factors 0.8 0.8 0.8
+  -o1
+  
+#--output-folder $OUTPUT_FOLDER
+
+env:
+  CONVFUNC_DEBUG_RUN": 0
+  SF_RNT_DMA_POLL_BUSY_WAIT: 1
+  SF_RNT_FSM_POLL_BUSY_WAIT: 1
+model-args: '
+  '
+run-args: |
+  --max_seq_length 1024 
+  --batch-size 16 
+  --config_name configuration/gpt2_small_config.json 
+  --weight_decay 0.1 
+  --max_grad_norm_clip 1.0 
+  --data_dir /home/ziyu/sambanova/tutorials/generative_nlp/datasets_h5
+  --steps 80
+  --min_eval_acc 0.00  
+  --samba_runtime_profile 
+  --log-level error 
+
+#--checkpoint_name /home/ziyu/sambanova/tutorials/generative_nlp/model/train_movie_review_checkpoint.pt 
