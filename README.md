@@ -1,4 +1,4 @@
-# Artifact Evaluation README for [Your Paper Title]
+# Artifact Evaluation README for Regular-DABench-LLM: Standardized and In-Depth Benchmarking of Post-Moore Dataflow AI Accelerators for LLMs
 
 ## Overview
 This repository contains the artifacts for the paper titled  Regular-DABench-LLM: Standardized and In-Depth Benchmarking of Post-Moore Dataflow AI Accelerators for LLMs by Ziyu Hu and Zhiqing Zhong. These artifacts are submitted for Artifact Evaluation (AE) to demonstrate the reproducibility of the results presented in the paper.
@@ -52,8 +52,8 @@ Access follows a two-step SSH process for most hardware:
 ### 2. Clone the Repository
 On the target hardware node (after accessing it):
    ```
-   git clone https://github.com/[YourUsername]/[YourRepoName].git
-   cd [YourRepoName]
+   git clone https://github.com/augustuszzq/Regular-DABench-LLM.git
+   cd Regular-DABench-LLM
    ```
 
 ### 3. Hardware-Specific Setup and Installation
